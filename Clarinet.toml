@@ -1,0 +1,43 @@
+[project]
+name = 'corporate-governance-dao'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.dao-governance]
+path = 'contracts/dao-governance.clar'
+clarity_version = 3
+epoch = '3.2'
+
+[contracts.proxy-registry]
+path = 'contracts/proxy-registry.clar'
+clarity_version = 3
+epoch = '3.2'
+
+[contracts.sip10-token]
+path = 'contracts/sip10-token.clar'
+clarity_version = 3
+epoch = '3.2'
+
+[contracts.timelock]
+path = 'contracts/timelock.clar'
+clarity_version = 3
+epoch = '3.2'
+
+[contracts.treasury]
+path = 'contracts/treasury.clar'
+clarity_version = 3
+epoch = 'latest'
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
